@@ -1,0 +1,51 @@
+#home-content{
+  padding-top: 45px;
+}
+
+.prog-left{
+  width: 50%;
+  align-items: center;
+  float: left;
+  text-align: center;
+}
+
+.prog-right{
+  width: 50%;
+  align-items: center;
+  float: left;
+  text-align: center;
+}
+
+.lang-title{
+  font-size: 80px;
+  color: #555555;
+}
+
+.lang-descript{
+  font-size: 24px;
+}
+
+.prog-right img{
+  width: inherit;
+}
+
+.prog-lang a{
+  color: #fff!important;
+  background-color: #616161!important;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.start-learn:hover{
+  background-color: rgb(186, 185, 182)!important;
+  color: black!important;
+}

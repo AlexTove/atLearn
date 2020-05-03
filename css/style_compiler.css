@@ -1,0 +1,41 @@
+body{
+  width: 100%;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+#code-workspace{
+  justify-content: center;
+  display: flex;
+}
+
+textarea {
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+
+input{
+  float:none;
+  position: static;
+  display: block;
+}
+
+#code{
+  width: 50%;
+  display: block;
+}
+
+#input{
+  width: 50%;
+  display: block;
+}
+
+#output{
+  display: none;
+}
