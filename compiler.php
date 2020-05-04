@@ -7,7 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/mode/clike/clike.min.js"></script>
-  <link rel-"stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/theme/3024-night.min.css"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/theme/3024-night.min.css"></script>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
           lineNumbers: true,
           mode: "text/x-c++src",
           matchBrackets: true,
-          theme:"base16-dark"
+          theme:"3024-night"
         });
       </script>
       <input type="submit" id="st" class="btn btn-success" value="Run Code">

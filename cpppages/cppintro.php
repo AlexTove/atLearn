@@ -112,9 +112,9 @@
             There is a lot of resources like <strong><a href="../home.php">atLearn
             </a></strong> etc. available on the internet regarding C++. Some of
             the other online resources for C++ include
-            <strong><a href="https://stackoverflow.com/questions/tagged/c%2B%2B">
-            StackOverflow</a></strong>, <strong><a href="https://en.cppreference.com/w/">
-            cppreference.com</a></strong>, <strong><a href="https://isocpp.org/">
+            <strong><a target="_blank" href="https://stackoverflow.com/questions/tagged/c%2B%2B">
+            StackOverflow</a></strong>, <strong><a target="_blank" href="https://en.cppreference.com/w/">
+            cppreference.com</a></strong>, <strong><a target="_blank" href="https://isocpp.org/">
             Standard C++</a></strong>, etc.
           </p>
           <p><strong>4. C++ In Databases</strong></p>
@@ -140,7 +140,7 @@
           <p>C++ is closer to the hardware level and is a comparatively low-level
             language. Because of this reason, it is used in many compilers as a
             backend programming language. An example of this is the
-            <strong><a href="https://www.gnu.org/software/gcc/">GNU Compiler
+            <strong><a target="_blank" href="https://www.gnu.org/software/gcc/">GNU Compiler
             Collection (GCC)</a></strong> which is currently written mostly in
             C++ along with C.
           </p>
@@ -172,10 +172,16 @@
             This is one of the main reasons that applications requiring multi-platform
             or multi-device development often use C++.
           </p>
+          <br>
+          <div class="prev-next-button">
+            <a href="../home.php" class="btn-prev">❮ Home</a>
+            <a href="cppenvironment.php" class="btn-next">Next ❯</a>
+          </div>
 
         </div>
       </div>
-
+      <hr>
+      <br><br><br>
     </div>
 
     <script>

@@ -1,11 +1,18 @@
 <!doctype html>
+<html lang="en">
 <html>
   <head>
-
+    <meta charset="UTF-8">
     <title>C++ Environment</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <script src="https://kit.fontawesome.com/36d3ddbb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
-
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/mode/clike/clike.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/theme/eclipse.min.css"></script>
   </head>
 
   <body>
@@ -83,7 +90,7 @@
           <p>For the beginning, i recommend using <strong>Code::Blocks</strong>.
              This is the IDE that we will use in this tutorial. You can download
              <strong>Code::Blocks</strong> by accessing this link
-             (<a href="http://www.codeblocks.org/downloads">http://www.codeblocks.org/downloads</a>).
+             (<a target="_blank" href="http://www.codeblocks.org/downloads">http://www.codeblocks.org/downloads</a>).
              Download the <strong>mingw-setup.exe</strong>, which will install
              the text editor and the compiler.
           </p>
@@ -92,9 +99,56 @@
              File > New > Empty File</strong>)
           </p>
           <p> Write the following C++ code and save the file as <strong>
-              HelloWorld.cpp</strong> (<strong>File > Save File as</strong>):
+              helloworld.cpp</strong> (<strong>File > Save File as</strong>):
           </p>
-          
+          <figure>
+            <figcaption>helloworld.cpp</figcaption>
+            <textarea id="form-code" name="code" rows="8" cols="50">
+#include<iostream>
+using namespace std;
+int main()
+{
+  cout<<"Hello World!";
+  return 0;
+}</textarea>
+            <script>
+              var editor = CodeMirror.fromTextArea(document.getElementById("form-code"), {
+                lineNumbers: true,
+                mode: "text/x-c++src",
+                matchBrackets: true,
+                readOnly: true,
+                theme: "eclipse"
+              });
+            </script>
+          </figure>
+
+          <p>Don't worry if you don't understand the code above - we will discuss
+            it in detail in later chapters. For now, focus on how to run the code.
+          </p>
+          <p>In Codeblocks, it should look like this:</p>
+          <img class="lesson-img" src="../img/helloworld.png">
+          <p>Then, go to <strong>Build > Build and run</strong> to execute the program.
+             The result should look like this:
+          </p>
+          <div class="result">
+            <div class="result-wrapper">
+              <code class="result-code">
+                Hello World!<br>
+                Process returned 0 (0x0) execution time : 0.011 s<br>
+                Press any key to continue.
+              </code>
+            </div>
+          </div>
+          <p><strong>Great!</strong> You have now written and executed your first
+             program
+          </p>
+          <br>
+          <div class="prev-next-button">
+            <a href="cppintro.php" class="btn-prev">❮ Previous</a>
+            <a href="cppsyntax.php" class="btn-next">Next ❯</a>
+          </div>
+          <hr>
+          <br><br><br>
     </div>
 
     <script>
