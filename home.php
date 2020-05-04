@@ -19,6 +19,7 @@
       <div id="topnav-left">
         <a class="topnav-button active-topnav">HOME</a>
         <a href="cpppages/cppintro.php" class="topnav-button">C++</a>
+        <a href="compiler.php" class="topnav-button">C++ COMPILER</a>
       </div>
       <div id="topnav-right">
 

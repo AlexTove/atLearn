@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<a href="home.php">HOME</a>
+
 <form action="compilers/cpp.php" id="form" name="f2" method="POST">
   <div id="code-workspace">
     <div id="code">

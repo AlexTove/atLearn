@@ -96,7 +96,7 @@
              This is the IDE that we will use in this tutorial. You can download
              <strong>Code::Blocks</strong> by accessing this link
              (<a target="_blank" href="http://www.codeblocks.org/downloads">http://www.codeblocks.org/downloads</a>).
-             Download the <strong>mingw-setup.exe</strong>, which will install
+             Download the <code class="code-highlight">mingw-setup.exe</code>, which will install
              the text editor and the compiler.
           </p>
           <hr>
