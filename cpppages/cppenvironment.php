@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>C++ Environment</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36d3ddbb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -106,6 +106,7 @@
             <textarea id="form-code" name="code" rows="8" cols="50">
 #include<iostream>
 using namespace std;
+
 int main()
 {
   cout<<"Hello World!";

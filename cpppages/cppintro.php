@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
   <head>
-
+    <meta charset="UTF-8">
     <title>C++ Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36d3ddbb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
 

@@ -226,3 +226,12 @@ a.topnav-button:hover{
 .btn-next{
   float:right;
 }
+
+.code-highlight{
+  color: crimson;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: Consolas,"courier new";
+  font-size: 105%;
+}
