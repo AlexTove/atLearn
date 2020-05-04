@@ -32,10 +32,10 @@
             <h2 class="nav-title">C++ Tutorial</h2>
             <a class="nav-button active-sidenav">C++ Intro</a>
             <a href="cppenvironment.php" class="nav-button">C++ Environment</a>
-            <a href="cppsyntax.php" class="nav-button">C++ Syntax</a>
-            <a href="cppin-out.php" class="nav-button">C++ Input/Output</a>
             <a href="cppcomments.php" class="nav-button">C++ Comments</a>
             <a href="cppvariables.php" class="nav-button">C++ Variables</a>
+            <a href="cppsyntax.php" class="nav-button">C++ Syntax</a>
+            <a href="cppin-out.php" class="nav-button">C++ Input/Output</a>
             <a href="cppoperators.php" class="nav-button">C++ Operators</a>
             <h2 class="nav-title">C++ Program Structure</h2>
             <a href="cppstatements.php" class="nav-button">C++ Statements</a>
@@ -67,6 +67,11 @@
         </div>
         <div id="text-wrap">
           <h1 id="lesson-title">C++ Introduction</h1>
+          <br>
+          <div class="prev-next-button">
+            <a href="../home.php" class="btn-prev">❮ Home</a>
+            <a href="cppenvironment.php" class="btn-next">Next ❯</a>
+          </div>
           <hr>
           <h2 id="lesson-subtitle">What is C++?</h2>
           <ul>

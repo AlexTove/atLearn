@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>C++ Syntax</title>
+    <title>C++ Operators</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36d3ddbb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -40,9 +40,9 @@
             <a href="cppenvironment.php" class="nav-button">C++ Environment</a>
             <a href="cppcomments.php" class="nav-button">C++ Comments</a>
             <a href="cppvariables.php" class="nav-button">C++ Variables</a>
-            <a class="nav-button active-sidenav">C++ Syntax</a>
+            <a href="cppsyntax.php" class="nav-button">C++ Syntax</a>
             <a href="cppin-out.php" class="nav-button">C++ Input/Output</a>
-            <a href="cppoperators.php" class="nav-button">C++ Operators</a>
+            <a class="nav-button active-sidenav">C++ Operators</a>
             <h2 class="nav-title">C++ Program Structure</h2>
             <a href="cppstatements.php" class="nav-button">C++ Statements</a>
             <a href="cppfunctions.php" class="nav-button">C++ Functions</a>
@@ -72,81 +72,18 @@
           </div>
         </div>
         <div id="text-wrap">
-          <h1 id="lesson-title">C++ Syntax</h1>
+          <h1 id="lesson-title">C++ Operators</h1>
           <br>
           <div class="prev-next-button">
-            <a href="cppvariables.php" class="btn-prev">❮ Previous</a>
-            <a href="cppin-out.php" class="btn-next">Next ❯</a>
+            <a href="cppin-out.php" class="btn-prev">❮ Previous</a>
+            <a href="cppstatements.php" class="btn-next">Next ❯</a>
           </div>
           <hr>
-          <h2 id="lesson-subtitle">Let's understand our first code!</h2>
-          <p>We are going to break the following code into pieces to understand it
-             better:
-          </p>
-          <figure>
-            <figcaption>helloworld.cpp</figcaption>
-            <textarea id="form-code" name="code" rows="8" cols="50">
-#include <iostream>
-using namespace std;
-
-int main()
-{
-  cout<<"Hello World!";
-  return 0;
-}</textarea>
-            <script>
-              var editor = CodeMirror.fromTextArea(document.getElementById("form-code"), {
-                lineNumbers: true,
-                mode: "text/x-c++src",
-                matchBrackets: true,
-                readOnly: true,
-                theme: "eclipse"
-              });
-            </script>
-          </figure>
-          <p><strong>Line 1:</strong> <code class="code-highlight">#include &ltiostream&gt</code>
-             is a <strong>header file library</strong>. <strong>Header files</strong>
-             are included at the beginning and contain predeclared function libraries,
-             which can be used by users for their ease. Here, <code class="code-highlight">iostream</code>
-             is a header file which provides us with input & output streams (like
-             <code class="code-highlight">cout</code>).
-          </p>
-          <p><strong>Line 2:</strong> <code class="code-highlight">using namespace std</code>
-             tells the compiler to use standard namespace. Namespace collects
-             identifiers used for class, object and variables. Namespace can be
-             used by two ways in a program, either by the use of using statement
-             at the beginning, like we did in above mentioned program or by using
-             name of namespace as prefix before the identifier with scope
-             resolution (<code class="code-highlight">::</code>) operator
-             (<em>Example:</em> <code class="code-highlight">std::cout<<"Hello World!"</code>).
-          </p>
-          <p>We will learn more about namespaces in a later chapter.</p>
-          <p><strong>Line 3:</strong> A blank line. C++ ignores white space.</p>
-          <p><strong>Line 4:</strong> <code class="code-highlight">main()</code>,
-             is a <strong>function</strong> which holds the executing part of program
-             its return type is <code class="code-highlight">int</code>. This function
-             must always appear in out program.
-          </p>
-          <p><strong>Line 5:</strong> On this line you can see a curly bracket
-             <code class="code-highlight">{</code>. This represents the start of the
-             <code class="code-highlight">main()</code> function.
-          </p>
-          <p><strong>Line 6:</strong> <code class="code-highlight">cout</code>
-             (pronounced "see-out") is an <strong>object</strong> used together
-             with the insertion operator (<code class="code-highlight"><<</code>)
-             to output / print text. In our example it will output "Hello World".
-          </p>
-          <p><strong>Line 7:</strong> <code class="code-highlight">return 0;</code>
-             is used to exit the <code class="code-highlight">main()</code> function
-             in normal conditions. Any other values will show an error.
-          </p>
-          <p><strong>Line 8:</strong> The curly bracket <code class="code-highlight">}</code>
-             marks the end of the <code class="code-highlight">main()</code> function.
-          </p>
+            <h2 id="lesson-subtitle">Arithmetic Operators</h2>
           <br>
           <div class="prev-next-button">
-            <a href="cppvariables.php" class="btn-prev">❮ Previous</a>
-            <a href="cppin-out.php" class="btn-next">Next ❯</a>
+            <a href="cppin-out.php" class="btn-prev">❮ Previous</a>
+            <a href="cppstatements.php" class="btn-next">Next ❯</a>
           </div>
           <hr>
           <br><br><br>

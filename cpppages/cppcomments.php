@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>C++ Input/Output</title>
+    <title>C++ Comments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36d3ddbb90.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -37,11 +37,11 @@
           <div id="sidenav">
             <h2 class="nav-title">C++ Tutorial</h2>
             <a href="cppintro.php" class="nav-button">C++ Intro</a>
-            <a href="cppenvironment.php" class="nav-button">C++ Environment</a>
-            <a href="cppcomments.php" class="nav-button">C++ Comments</a>
+            <a href="cppenvironment.php"class="nav-button">C++ Environment</a>
+            <a class="nav-button active-sidenav">C++ Comments</a>
             <a href="cppvariables.php" class="nav-button">C++ Variables</a>
             <a href="cppsyntax.php" class="nav-button">C++ Syntax</a>
-            <a class="nav-button active-sidenav">C++ Input/Output</a>
+            <a href="cppin-out.php" class="nav-button">C++ Input/Output</a>
             <a href="cppoperators.php" class="nav-button">C++ Operators</a>
             <h2 class="nav-title">C++ Program Structure</h2>
             <a href="cppstatements.php" class="nav-button">C++ Statements</a>
@@ -72,36 +72,34 @@
           </div>
         </div>
         <div id="text-wrap">
-          <h1 id="lesson-title">C++ Input/Output</h1>
+          <h1 id="lesson-title">C++ Comments</h1>
           <br>
           <div class="prev-next-button">
-            <a href="cppsyntax.php" class="btn-prev">❮ Previous</a>
-            <a href="cppoperators.php" class="btn-next">Next ❯</a>
+            <a href="cppenvironment.php" class="btn-prev">❮ Previous</a>
+            <a href="cppvariables.php" class="btn-next">Next ❯</a>
           </div>
           <hr>
-          <p>The example programs of the previous sections provided little
-             interaction with the user, if any at all. They simply printed simple
-             values on screen, but the standard library provides many additional
-             ways to interact with the user via its input/output features. This
-             section will present a short introduction to some of the most useful.
+          <p>Comments can be used to explain C++ code, and to make it more readable.
+             It can also be used to prevent execution when testing alternative code.
+             Comments can be <code>singled-lined</code> or <code>multi-lined</code>.
           </p>
           <hr>
-          <h2 id="lesson-subtitle">C++ Standard Output(cout)</h2>
-          <p>On most program environments, the <code>standard output</code> by
-             default is the screen, and the <code>C++ stream object</code> defined
-             to access it is <code class="code-highlight">cout</code>.
+          <h2 id="lesson-subtitle">C++ Single-line comments</h2>
+          <p>Single-line comments start with two forward slashes
+             (<code class="code-highlight">//</code>).
           </p>
-          <p>For formatted output operations, <code class="code-highlight">cout</code>
-             is used together with the <code>insertion operator</code>, which is
-             written as <code class="code-highlight"><<</code>.
+          <p>Any text between <code class="code-highlight">//</code> and the end
+             of the line is ignored by the compiler (will not be executed).
           </p>
-          <p>Let's take the snippet as an example:</p>
+          <p>This example uses 2 single-line comments:
+          </p>
           <figure>
             <figcaption>example.cpp</figcaption>
             <textarea id="form-code" name="code" rows="8" cols="50">
-cout<<"Hello!";
-cout<<120;
-cout<<Hello;</textarea>
+//This is a single-line comment
+cout<<"Hello World!";
+cout<<"Hello atLearn!";//This is another single-line comment
+return 0;</textarea>
             <script>
               var editor = CodeMirror.fromTextArea(document.getElementById("form-code"), {
                 lineNumbers: true,
@@ -112,23 +110,26 @@ cout<<Hello;</textarea>
               });
             </script>
           </figure>
-          <p>In the examples above, the code will print <code>Hello</code>,
-            the number <code>120</code>, and the value of <strong>variable</strong> <code>Hello</code>
-            into the <code>standard output stream</code> <code class="code-highlight">cout</code>.
-            Notice that the sentence in the first statement is enclosed in double
-            quotes (<code class="code-highlight">"</code>) because it is a string literal,
-            while in the last one, <code>Hello</code> is not. The double quoting
-            is what makes the difference. When the text is enclosed between them,
-            the text is printed literally. When they are not, the text is interpreted as
-            the identifier of a <strong>variable</strong>, and its value is printed instead.
+          <p>As you can see, the first comment is situated before a line of code
+             and the second one is situated at the end of a line of code.
           </p>
-          <p>Multiple <code>insertion operations</code> (<code class="code-highlight"><<</code>)
-             may be chained in a single statement:
+          <hr>
+          <h2 id="lesson-subtitle">C++ Multi-line comments</h2>
+          <p>Multi-line comments start with <code class="code-highlight">/*</code>
+             and ends with <code class="code-highlight">*/</code>.
+          </p>
+          <p>Any text between <code class="code-highlight">/*</code> and
+             <code class="code-highlight">*/</code> will be ignored by the compiler.
           </p>
           <figure>
             <figcaption>example2.cpp</figcaption>
             <textarea id="form-code-2" name="code" rows="8" cols="50">
-cout<<"This "<<" is a "<<"single C++ statement";</textarea>
+/*this
+is
+a
+multi-line
+comment*/
+cout<<"Hello World!"; </textarea>
             <script>
               var editor = CodeMirror.fromTextArea(document.getElementById("form-code-2"), {
                 lineNumbers: true,
@@ -140,67 +141,13 @@ cout<<"This "<<" is a "<<"single C++ statement";</textarea>
             </script>
           </figure>
           <p>
-            The above code will print <code>This is a single C++ statement</code>.
+            Multi-line comments are also often used to comment lines of code so you
+            won't have to delete them when u want to test it's functionalities.
           </p>
-          <hr>
-          <h2 id="lesson subtitle">C++ Standard Input</h2>
-          <p>You have already learned that <code class="code-highlight">cout</code>
-             is used to output (print) values. Now we will use <code class="code-highlight">cin</code>
-             to get user input.
-          </p>
-          <p><code class="code-highlight">cin</code> is a predefined variable
-             that reads data from the keyboard with the extraction operator
-             (<code class="code-highlight">>></code>).
-          </p>
-          <p>In the following example, the user can input a number,
-            which is stored in the variable <code>x</code>. Then we print the
-            value of <code>x</code>:
-          </p>
-          <figure>
-            <figcaption>example3.cpp</figcaption>
-            <textarea id="form-code-3" name="code" rows="8" cols="50">
-int x;
-cout<<"Type a number: "; // Type a number and press enter
-cin>>x; // Get user input from the keyboard
-cout<<"Your number is: "<<x; // Display the input value</textarea>
-            <script>
-              var editor = CodeMirror.fromTextArea(document.getElementById("form-code-3"), {
-                lineNumbers: true,
-                mode: "text/x-c++src",
-                matchBrackets: true,
-                readOnly: true,
-                theme: "eclipse"
-              });
-            </script>
-          </figure>
-          <p>Just like we nested insertion operators (<code class="code-highlight"><<</code>)
-             in our <code class="code-highlight">cout</code> instruction, we can nest
-             extraction operators(<code class="code-highlight">>></code>) in our
-             <code class="code-highlight">cin</code> instruction.
-           </p>
-           <p>Look at the example below: </p>
-           <figure>
-             <figcaption>example4.cpp</figcaption>
-             <textarea id="form-code-4" name="code" rows="8" cols="50">
- int x, y;
- cout<<"Type 2 numbers: "; // Type 2 numbers and press enter
- // Or you could type the first, press enter and then type the second
- cin>>x>>y; // Get user input from the keyboard
- cout<<"Your numbers are: "<<x<<y; // Display the input value</textarea>
-             <script>
-               var editor = CodeMirror.fromTextArea(document.getElementById("form-code-4"), {
-                 lineNumbers: true,
-                 mode: "text/x-c++src",
-                 matchBrackets: true,
-                 readOnly: true,
-                 theme: "eclipse"
-               });
-             </script>
-           </figure>
           <br>
           <div class="prev-next-button">
-            <a href="cppsyntax.php" class="btn-prev">❮ Previous</a>
-            <a href="cppoperators.php" class="btn-next">Next ❯</a>
+            <a href="cppenvironment.php" class="btn-prev">❮ Previous</a>
+            <a href="cppvariables.php" class="btn-next">Next ❯</a>
           </div>
           <hr>
           <br><br><br>
