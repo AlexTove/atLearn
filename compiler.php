@@ -4,6 +4,10 @@
   <link rel="stylesheet" href="css/style_compiler.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/mode/clike/clike.min.js"></script>
+  <link rel-"stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.50.2/theme/3024-night.min.css"></script>
 </head>
 <body>
 
@@ -11,7 +15,15 @@
   <div id="code-workspace">
     <div id="code">
       <p>Code:</p>
-      <textarea class="form-code" name="code" rows="10" cols="50"></textarea>
+      <textarea id="form-code" name="code" rows="10" cols="50"></textarea>
+      <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("form-code"), {
+          lineNumbers: true,
+          mode: "text/x-c++src",
+          matchBrackets: true,
+          theme:"base16-dark"
+        });
+      </script>
       <input type="submit" id="st" class="btn btn-success" value="Run Code">
     </div>
     <div id="input">
